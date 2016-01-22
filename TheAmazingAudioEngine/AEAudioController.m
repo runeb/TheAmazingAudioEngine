@@ -276,8 +276,9 @@ typedef struct _channel_group_t {
 
 @implementation AEAudioController
 #if TARGET_OS_IPHONE
-@synthesize audioSessionCategory = _audioSessionCategory, audioUnit = _ioAudioUnit;
+@synthesize audioSessionCategory = _audioSessionCategory;
 #endif
+@synthesize audioUnit = _ioAudioUnit;
 @dynamic running, inputGainAvailable, inputGain, audiobusSenderPort, inputAudioDescription, inputChannelSelection;
 
 #pragma mark -
